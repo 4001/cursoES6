@@ -2,9 +2,9 @@ class NegociacaoController{
 
     constructor(){
         let $ = document.querySelector.bind(document);
-        this.inputData = $('#data');
-        this.inputQuantidade = $('#quantidade');
-        this.inputValor = $('#valor');
+        this._inputData = $('#data');
+        this._inputQuantidade = $('#quantidade');
+        this._inputValor = $('#valor');
 
     }
 
@@ -12,9 +12,9 @@ class NegociacaoController{
         event.preventDefault();
 
         
-        console.log(this.inputData.value);
-        console.log(this.inputQuantidade.value);
-        console.log(this.inputValor.value);
+        console.log(this._inputData.value);
+        console.log(this._inputQuantidade.value);
+        console.log(this._inputValor.value);
 
 
     }
