@@ -15,7 +15,6 @@ class NegociacaoController {
 
         this._listaNegociacoes.adiciona(this._criaNegociacao());
         this._limpaFormulario();
-        console.log(this._listaNegociacoes.negociacoes);
     }
 
     _criaNegociacao(){
@@ -27,11 +26,10 @@ class NegociacaoController {
     }
 
     _limpaFormulario(){
-        
+         
         this._inputData.value = '';
         this._inputQuantidade.value = 1;
         this._inputValor.value = 0.0;
-
         this._inputData.focus();
     }
 }
